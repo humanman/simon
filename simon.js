@@ -36,7 +36,7 @@ var bluesound = document.getElementById("bluesound");
 var redsound = document.getElementById("redsound");
 var greensound = document.getElementById("greensound");
 var yellowsound = document.getElementById("yellowsound");
-var colorsounds = [redsound, bluesound, greensound, yellowsound]
+var colorsounds = [redsound, bluesound, greensound, yellowsound];
 var colorsoundsSeq = [];
 var scoreDisplay = document.getElementById("score");
 var playAgain = document.getElementById("playagain");
@@ -45,21 +45,21 @@ var quote = document.getElementById("quote");
 
 
 var runGame = function() {
-	run = true
-	quote.textContent = ""
+	run = true;
+	quote.textContent = "";
 	window.setTimeout(function() {
-		seqGenerator()}, 3000)
+		seqGenerator()}, 3000);
 }
 
 // randomly get colors and extend sequence by 1 each time it's called
 var seqGenerator =  function() {
 	if (run === true ) {
-		playAgain.textContent = ""
+		playAgain.textContent = "";
 		var sequence =  Math.floor(Math.random() * colors.length);
-		currentSeq.push(colors[sequence])
-		colorsoundsSeq.push(colorsounds[sequence])
+		currentSeq.push(colors[sequence]);
+		colorsoundsSeq.push(colorsounds[sequence]);
 		for (var i = 0; i < currentSeq.length; i++) {
-	    flashColors(i)
+	    flashColors(i);
 		}
 		counter += 1;
  }
@@ -68,7 +68,7 @@ var seqGenerator =  function() {
 
 var addToArr = function(val) {
 	inputSeq.push("#" + val.id )
-	checkInput()
+	checkInput();
 }	
 
 // does input sequence match currentSeq? yes? 
@@ -84,15 +84,15 @@ var checkInput = function() {
 		correct += 1;
 	}
 	else {
-		endGame()
+		endGame();
 	}
 	if (correct === currentSeq.length && run === true) {
 		score += 1
 		window.setTimeout(function() {
 			inputSeq = [];
-			seqGenerator()
+			seqGenerator();
 			correct = 0;
-		}, 2000)
+		}, 2000);
 	}
 }
 
@@ -106,18 +106,16 @@ var reset = function() {
 	tempArr = [];
 	score = 0;
 	colorsoundsSeq = [];
-	scoreDisplay.textContent = ""
-	quote.textContent = ""
-	playAgain.textContent = "Press The Start Button To Play"
+	scoreDisplay.textContent = "";
+	quote.textContent = "";
+	playAgain.textContent = "Press The Start Button To Play";
 }
 
 var endGame = function() {
 	// alert ("game over")
-	run = false
-	scoreDisplay.textContent = "final score: " + score
-	quote.textContent = "All those moments will be lost in time like tears in rain..."
-
-
+	run = false;
+	scoreDisplay.textContent = "final score: " + score;
+	quote.textContent = "All those moments will be lost in time like tears in rain...";
 }
 
 // flash each color in the currentSeq then empty currentSeq
@@ -125,10 +123,10 @@ var endGame = function() {
 // currentSeq array as it shifted() every second.
 var flashColors = function(n) {
 	window.setTimeout(function() {
-		animator(currentSeq[n])
-		colorsoundsSeq[n].play()
+		animator(currentSeq[n]);
+		colorsoundsSeq[n].play();
 		colorsoundsSeq[n].currentTime=0;
-	} , (n * 700 ))
+	} , (n * 700 ));
 }
 
 
@@ -143,38 +141,38 @@ var animator = function(element) {
 
 // event functions to flash colors and make sounds when clicked
 $( "#red" ).click(function() {
- redsound.play()
- animator($( "#red" ))
+ redsound.play();
+ animator($( "#red" ));
  redsound.currentTime=0;
 })
 
 $( "#blue" ).click(function() {
- bluesound.play()
- animator($( "#blue" ))
+ bluesound.play();
+ animator($( "#blue" ));
  bluesound.currentTime=0;
 })
 
 $( "#green" ).click(function() {
- greensound.play()
- animator($( "#green" ))
+ greensound.play();
+ animator($( "#green" ));
  greensound.currentTime=0;
 })
 
 $( "#yellow" ).click(function() {
- yellowsound.play()
- animator($( "#yellow" ))
+ yellowsound.play();
+ animator($( "#yellow" ));
  yellowsound.currentTime=0;
 })
 
 
 $("#start").click(function() {
-	reset()
+	reset();
 	audio.play();
-	runGame()
+	runGame();
 })
  
 $("#reset").click(function() {
-	reset()
+	reset();
 	audio1.play();
 })
 
