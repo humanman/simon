@@ -1,0 +1,138 @@
+ .clear {
+    clear:both;
+}
+.board {
+    position: relative;
+    margin-left: 650px;
+    margin-top: 390px;
+    /*padding: 10%;*/
+    height: 248px;
+    width: 338px;
+   
+
+}
+
+#blue{
+    float: left;
+    width: 22%;
+    height: 90%;
+    background-color: #000099;
+    border-top: 5px solid blue;
+    border-right: 1px solid blue;
+    border-bottom: 1px solid blue;
+    border-left: 5px solid blue;
+    border-radius: 15px 0  0 15px
+}
+
+#red{
+    float: left;
+    width: 22%;
+    height: 90%;
+    background-color: #CC0000;
+    border-top: 5px solid red;
+    border-right: 1px solid #FF2600;
+    border-bottom: 1px solid #FF2600;
+    border-left: 5px solid red;
+}
+
+#green{
+    float: left;
+    width: 22%;
+    height: 90%;
+    background-color: green;
+    border-top: 5px solid #00CC00;
+    border-right: 1px solid #00CC00;
+    border-bottom: 1px solid #00CC00;
+    border-left: 5px solid #00CC00;
+}
+
+#yellow{
+    float: left;
+    width: 22%;
+    height: 90%;
+    background-color: #CCCC00;
+    border-top: 5px solid yellow;
+    border-right: 1px solid #FFFF66;
+    border-bottom: 1px solid #FFFF66;
+    border-left: 5px solid yellow;
+    border-radius: 0 15px 15px 0
+}
+
+.glow {
+  margin: auto;
+  width: 147px;
+  height: 90px;
+  background-color: #1f5afe;
+}
+
+@font-face {
+  font-family: Blade-Runner;
+  src: url(./BLADRMF_.TTF);
+}
+
+
+.machine {
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 0;
+    position: top;
+    z-index: 10;
+    min-height: 600px;
+    min-width: 900px;
+    max-width: 60%;
+    width:auto;
+    height:auto; 
+  ;
+
+}
+
+.frame {
+    position: relative;
+    z-index: 1;
+    width: 98%;
+    height: 98%;
+}
+
+
+button {
+    margin-left: 50%;
+    font-family: Blade-Runner;
+}
+
+h1{
+    font-family: Blade-Runner;
+}
+
+.floatDiv {
+    position: absolute;
+    margin: auto;
+    z-index: 1; 
+    opacity: .5;
+    height: 25%;
+    width: 90%;
+}
+
+html { 
+    background: url("./blade runner simon bkgd with machine.png");
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#score {
+    font-size: 35pt;
+    font-family: Blade-Runner;
+    position: fixed;
+    margin-top:  20px;
+    margin-left: 60%;
+}
+
+#quote {
+    font-size: 20pt;
+    font-family: Blade-Runner;
+    position: fixed;
+    margin-top:  60px;
+    margin-left: 60%;
+}

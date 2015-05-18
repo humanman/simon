@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- // <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="simon.css">
+ <script src="jquery-2.1.4.js"></script>
+
+</head>
+    <body>
+        <h1 style="font-family: Blade-Runner">R</h1>
+                <div id="score" class="floatDiv"><h1 id="score"></h1></div>
+                 <div id="quote" class="floatDiv" style="width: 200px; height: 100px"><h1></h1></div>
+        <div class="frame">
+
+            <div class="board">
+                <br></br>
+                <div class="floatDiv"><h1 id="playagain"></h1></div>
+
+
+                <div id="blue" class="grid-element buttonlink" alt="blue" href="#" onclick="addToArr(blue)"></div>
+     
+                <div id="red" class="grid-element" alt="red" href="#" onclick="addToArr(red)"></div>
+
+                <div id="green" class="grid-element" alt="green" href="#" onclick="addToArr(green)"></div>
+        
+                <div id="yellow" class="grid-element" alt="yellow" href="#" onclick="addToArr(yellow)"></div>
+     
+            </div>
+        </div>
+ 
+        <div class="clear"></div>
+        <button type="button" id="start" >Start New Game</button>
+         <button type="button" id="reset">reset </button>
+        <audio id="startbutton">
+            <source  src="InterSpace/Movement/Movement-21.wav"></source>
+
+        </audio>
+        <audio id="bluesound">
+            <source  src="bluesound.mp3"></source>
+
+        </audio>
+        <audio id="redsound">
+            <source  src="redsound.mp3"></source>
+        </audio>
+        <audio id="greensound">
+            <source  src="greensound.mp3"></source>
+        </audio>
+        <audio id="yellowsound">
+            <source  src="yellowsound.mp3"></source>
+        </audio>
+        <audio id="resetbutton"><source id="resetbutton" src="InterSpace/Movement/Movement-40.wav"></source>
+                Your browser isn't invited for super fun audio time.</audio>
+
+    <script type="text/javascript" src="simon.js"></script>
+    
+</body>
+</html>
