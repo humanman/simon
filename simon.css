@@ -1,14 +1,27 @@
  .clear {
     clear:both;
 }
+
+.machine {
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 0;
+    z-index: 10;
+    min-height: 600px;
+    min-width: 900px;
+    max-width: 60%;
+    width:auto;
+    height:auto; 
+}
+
 .board {
-    position: relative;
-    margin-left: 650px;
-    margin-top: 390px;
-    /*padding: 10%;*/
-    height: 248px;
-    width: 338px;
-   
+    position: absolute;
+    margin-left: 16%;
+    margin-top: -29%;
+    padding: 10%;
+    height: 33.5%;
+    width: 22%;
+   z-index: 5;
 
 }
 
@@ -21,7 +34,7 @@
     border-right: 1px solid blue;
     border-bottom: 1px solid blue;
     border-left: 5px solid blue;
-    border-radius: 15px 0  0 15px
+    border-radius: 50px 0  0 50px
 }
 
 #red{
@@ -55,7 +68,7 @@
     border-right: 1px solid #FFFF66;
     border-bottom: 1px solid #FFFF66;
     border-left: 5px solid yellow;
-    border-radius: 0 15px 15px 0
+    border-radius: 0 50px 50px 0
 }
 
 .glow {
@@ -71,31 +84,18 @@
 }
 
 
-.machine {
-    position: absolute;
-    margin-left: 20%;
-    margin-top: 0;
-    position: top;
-    z-index: 10;
-    min-height: 600px;
-    min-width: 900px;
-    max-width: 60%;
-    width:auto;
-    height:auto; 
-  ;
-
-}
 
 .frame {
     position: relative;
     z-index: 1;
-    width: 98%;
-    height: 98%;
+    width: 80%;
+    height: 800%;
+    margin: auto;
 }
 
 
 button {
-    margin-left: 50%;
+    margin: auto;
     font-family: Blade-Runner;
 }
 
@@ -109,12 +109,11 @@ h1{
     z-index: 1; 
     opacity: .5;
     height: 25%;
-    width: 90%;
+    width: 10%;
 }
 
 html { 
-    background: url("./blade-runner-simon-bkgd-with-machine-OPTIMIZED+SMALLER.jpg");
-    background-color: black;
+    background: url("./blade runner simon bkgd copy.png");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -126,7 +125,7 @@ html {
     font-family: Blade-Runner;
     position: fixed;
     margin-top:  20px;
-    margin-left: 60%;
+    margin-left: 10%;
 }
 
 #quote {
